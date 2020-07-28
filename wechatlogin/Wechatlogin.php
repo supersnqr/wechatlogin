@@ -26,7 +26,7 @@ class Wechatlogin
 		$appid = config('site.appid_login');
 		$callback = urlencode($callback);
 		$url = "https://open.weixin.qq.com/connect/qrconnect?appid={$appid}&redirect_uri={$callback}&response_type=code&scope=snsapi_login&state=what#wechat_redirect";
-		return $url
+		return $url;
     }
 	public static function wechat_pub($callback=''){
 		$appid = config('site.public_appid');
